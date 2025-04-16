@@ -16,19 +16,24 @@
   <!-- header -->
   <header class="main-header">
     <div class="header-left">
+      <!-- Este no es el logo de ableton -->
       <div class="logo">≡</div>
       <nav class="main-nav">
-        <a href="#">Live</a>
-        <a href="#">Push</a>
-        <a href="#">Move</a>
-        <a href="#">Note</a>
-        <a href="#">Link</a>
-        <a href="#">Shop</a>
-        <a href="#">Packs</a>
-        <a href="#">Help</a>
-        <a href="#">More +</a>
+        <!-- La estructura semántica para un nav debe ser nav > ul > li > a -->
+        <ul>
+          <li><a href="#">Live</a></li>
+          <li><a href="#">Push</a></li>
+          <li><a href="#">Move</a></li>
+          <li><a href="#">Note</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Packs</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">More +</a></li>
+         </ul>
       </nav>
     </div>
+    <!-- Estas tambén son navegaciones, deberían hacer uso de la etiqueta nav -->
     <div class="header-right">
       <a href="#" class="highlight-link">Try Live 12 for free</a>
       <a href="#">Log in or register</a>
@@ -37,11 +42,16 @@
 
   <!-- submenu -->
   <nav class="sub-nav">
+    <!-- mismo caso en la estructura semántica de esta navegación nav > ul > li > a -->
     <a href="#" class="active">About</a>
     <a href="#">Jobs</a>
     <a href="#">Apprenticeships</a>
   </nav>
 
+  <!-- 
+    En términos de semántica del html, todo el resto del documento debería estar agrupado dentro de una misma sección. 
+    Podría utilizarse un <main> o un <section> para agrupar todo el contenido.
+    -->
   <section class="hero">
     <h1 class="hero-title">Ableton</h1>
   </section>
